@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+body * {
+  box-sizing: border-box;
+
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  background: #f4f4f4;
+  text-align: center;
+  padding: 2em;
+}
+
+header img {
+  max-width: 96px;
+}
+
+header h1 {
+  font-size: 2.5em;
+}
+
+/*
+footer {
+  background: 
+} 
+*/
+input {
+  border-radius: 5px;
+}
+input:focus:invalid {
+  
+  border: 2px solid red;
+  background-color: #dadde3;
+  
+  outline: none;
+}
+/*
+input:valid {
+  border: 2px solid lightgreen;
+}
+*/
+.erreur {
+  width  : 100%;
+  margin: 0.5rem;
+  padding: 0;
+
+  font-size: 80%;
+  color: white;
+  background-color: red;
+  border-radius: 2px;
+}
+
+
+h1,
+h2 {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.new-member-form {
+  margin: 2em 0 4em 0;
+  text-align: center;
+}
+
+.member-item {
+
+  padding: 0.25em 0.5rem;
+  width: 33%;
+  display: inline-block;
+}
+
+footer {
+  margin-top: 2em;
+  text-align: center;
+  color: #fff;
+  background: #f76c6c;
+  padding: 0.25em 0;
+}
+
+#liste {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+@media screen and (max-width: 576px) {
+  #liste {
+    flex-direction: column;
+  }
+
+  .member-item {
+    text-align: center;
+    width: 100%;
+    display: block;
+
+
+  }
+
+}
